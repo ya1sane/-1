@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиці та форма авторизації</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .login-container {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #45a049;
+        }
+        .login-container p {
+            margin-top: 10px;
+        }
+        .login-container a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Статистика продажу автомобілів</h2>
+    <table>
+        <tr>
+            <th>Марка автомобіля</th>
+            <th>Січень</th>
+            <th>Лютий</th>
+            <th>Березень</th>
+        </tr>
+        <tr>
+            <td>Toyota</td>
+            <td>270 000</td>
+            <td>250 000</td>
+            <td>300 000</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>250 000</td>
+            <td>200 000</td>
+            <td>270 000</td>
+        </tr>
+        <tr>
+            <td>Renault-Nissan</td>
+            <td>130 000</td>
+            <td>150 000</td>
+            <td>200 000</td>
+        </tr>
+        <tr>
+            <th>ВСЬОГО:</th>
+            <th>650 000</th>
+            <th>600 000</th>
+            <th>770 000</th>
+        </tr>
+    </table>
+
+    <h2>Розклад занять</h2>
+    <table>
+        <tr>
+            <th>День тижня</th>
+            <th>Академічні години</th>
+            <th>КН-2.01</th>
+            <th>КН-2.02</th>
+            <th>КН-2.03</th>
+        </tr>
+        <tr>
+            <td rowspan="3">ПОНЕДІЛОК</td>
+            <td>8.00-9.20</td>
+            <td colspan="3">Веб-технології та веб-дизайн</td>
+        </tr>
+        <tr>
+            <td>9.35-10.55</td>
+            <td>Об'єктно-орієнтоване програмування</td>
+            <td>Комп'ютерна дискретна математика</td>
+            <td>Теорія алгоритмів</td>
+        </tr>
+        <tr>
+            <td>11.10-12.30</td>
+            <td colspan="3">Теорія алгоритмів</td>
+        </tr>
+    </table>
+
+    <h2>Форма авторизації</h2>
+    <div class="login-container">
+        <h2>Login form</h2>
+        <form>
+            <input type="email" placeholder="Enter Email Id" required><br>
+            <input type="password" placeholder="Enter Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+
+</body>
+</html>
